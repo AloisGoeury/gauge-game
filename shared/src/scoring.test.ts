@@ -5,8 +5,9 @@ describe("scoring", () => {
   it("calculates points from configured distance bands", () => {
     expect(calculatePoints(500, 505)).toBe(4);
     expect(calculatePoints(500, 512)).toBe(2);
-    expect(calculatePoints(500, 520)).toBe(1);
-    expect(calculatePoints(500, 521)).toBe(0);
+    expect(calculatePoints(500, 525)).toBe(2);
+    expect(calculatePoints(500, 550)).toBe(1);
+    expect(calculatePoints(500, 551)).toBe(0);
   });
 
   it("generates a target inside the gauge", () => {

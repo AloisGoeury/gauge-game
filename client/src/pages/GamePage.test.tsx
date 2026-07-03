@@ -28,7 +28,7 @@ function makeState(playerId: string, role: RoomStatePayload["role"]): RoomStateP
   return {
     playerId,
     role,
-    scoreZones: role === "clueGiver" ? { four: [645, 655], two: [638, 662], one: [630, 670] } : undefined,
+    scoreZones: role === "clueGiver" ? { four: [645, 655], two: [625, 675], one: [600, 700] } : undefined,
     game: {
       id: "game",
       roomCode: "ABC123",
